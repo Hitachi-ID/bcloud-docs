@@ -1,5 +1,9 @@
-This repository contains the Helm-based deployment implementations for running
-Bravura Cloud products using Kubernetes.
+# Introduction
+
+This article describes how you can run Bravura Cloud in a lab environment using minicube. 
+
+MMinikube is an open-source tool that facilitates running Kubernetes (a popular container orchestration platform) locally on one's machine. Instead of setting up a full-blown Kubernetes cluster on multiple machines or VMs, Minikube provides a single-node Kubernetes cluster inside a virtual machine (VM) or a container on your computer. This makes it especially suitable for developers wanting to test Kubernetes applications, experiment with Kubernetes features, or learn the platform without the overhead of a larger-scale setup. Minikube supports Kubernetes features like DNS, NodePorts, ConfigMaps, and Secrets, ensuring a realistic environment for development and testing.
+
 
 ## Contents
 
