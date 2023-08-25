@@ -6,3 +6,7 @@ Superagent.sh is a chat agent infrastructure that allows you to create chatbots.
 * What identity cleansing?
 * How do I install bravura cloud?
 * How do I integrate bravura cloud with microsoft teams? 
+
+## Steps
+
+To add Bravura Cloud data to superuser.sh agents you 
