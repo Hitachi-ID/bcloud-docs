@@ -1,53 +1,125 @@
 # Bravura Cloud Quick Start
 
-## Introduction
+This guide is intended to be a quickstart that allows you to get going with Bravura Cloud. It will walk you through the steps of
 
-- **1.1. Purpose of the Guide**
+* Planning out what environment you want to start with. Its strongly advised you consider a Lab or UAT environment where you can explore the capabilities of the platform and once you are comfortable evaluate if you would like to run it against production resources.
 
-- **1.2. Overview of the Application**
+* Installing Bravura Cloud locally for your evaluation.
+* Discovery: Discovering the identities in your enviornment. Their attributes. Their group memberships. etc. 
+* Cleansing: Cleaning up orphaned accounts. Inappropriate entitlements. Incorrect identity attributes. 
+* Inventory: Navigating your identity inventory. Understanding your current state. 
+* Governing: Establishing a continual monitoring plan so you can be notified of changes in your identity inventory. 
+
+For background, please see our topics on
+* What is identity discovery
+* What is identity cleansing
+* What is identity inventory
+* What is identity governance
 
 
-## **2. Deployment Options**
+## Planning
 
-- **2.1. Our Cloud**
+Its recommended that you start your Bravura Cloud journey in a lab or user acceptance test environment. Characteristics of a lab is it should have:
 
-Our cloud represents Bravura Security's SaaS hosted service. A turn key way of getting going with Bravura Cloud quickly and easily. Right now we are rapdily building this infrastructure and looking forward to providing this to you. For the time being, please see the Your Cloud area for instructions on how to host Bravura Cloud's early access solution in a lab environment.
+* A set of systems that represent your mission critical applications. For example, an Active Directory, Ldap, or testing tenants 
+* A set of users that represent your population. End users. Administrators. System accounts. Shared accounts. etc.
+* A set of entitlements that represent your population. Groups, roles, memberships. 
 
-- **2.2. Your Cloud**
+To run Bravura Cloud in a lab environment you will need an
+* A linux virtual machine
+* Ability to install packages on the linux machine such as minicube from the internet. 
+* Ability to pull docker images from docker repositories on the internet. 
 
-Your cloud represents your on-premesis infrastructure. Right now we support
+## Installation
 
-* Minicube lab environment: Useful for testing the capabilities of bravura cloud out and building applications on top of its infrastructure.
+To install bravura cloud in your local lab environment please follow the below steps:
 
-- **2.3. Their cloud**
+1. Install docker 
 
-## **3. Discovery**
-- **4.1. Strategize**
+1.1. Docker GPG key:
 
-- **4.2. 12.3+**
+`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
 
-## **4. Cleanse**
-- **4.1. Strategize**
+1.2. Docker repository:
 
-- **4.2. Compliance rules**
+`echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list`
 
-- **4.3. Reviewing results**
+1.3. Docker dependencies:
 
-- **4.4. Cleaning data**
+`sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release -y`
 
-## **5. Inventory**
-- **5.1. Strategize**
-- **5.2. User Interface**
-- **5.3. Dashboards**
-- **5.4. Reporting**
+1.4. Install Docker:
 
-## **6. Governance**
-- **6.1. Strategize**
-- **6.2. Compliance rules**
-- **6.3. Dashboards**
-- **6.4. Reporting**
+`sudo apt-get install docker-ce docker-ce-cli containerd.io -y`
 
-## **7. What's next?**
-- **7.1. Best Practices**
+1.5. Add yourself to the docker group (optional):
+
+`sudo usermod -aG docker $USER`
+
+2. Install Minikube
+
+2.1. Fetch Minikube:
+
+`wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64`
+
+2.2. Place Minikube on the path:
+
+`sudo cp minikube-linux-amd64 /usr/local/bin/minikube`
+
+2.3. Fetch kubectl:
+
+```curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl```
+
+2.3. Make kubectl executable:
+
+`chmod +x kubectl`
+
+`sudo chmod 755 /usr/local/bin/minikube`
+
+2.4. Place kubectl on the path:
+
+`sudo mv kubectl /usr/local/bin/`
+
+2.4. Start a Kubernetes cluster for the first time:
+
+`minikube start --driver=docker`
+
+3. Install Helm
+
+`curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null`
+
+`sudo apt-get install apt-transport-https --yes`
+
+`echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list`
+
+`sudo apt-get update`
+
+`sudo apt-get install helm`
+
+
+4. Install Bravura Cloud containers
+The following demonstrates how to run the core services via its umbrella chart.
+
+4.1 Start a Kubernetes cluster:
+
+`minikube start`
+
+4.2 Deploy:
+
+`helm install core core/`
+
+4.3 Enable accessing resources:
+
+`minikube tunnel`
+
+For additional steps and best practices for maintaining this Bravura Cloud deployment pleases see <REF TO DOCS>
+
+## Discovery
+
+## Cleansing
+
+## Governance
+
+
 
 
