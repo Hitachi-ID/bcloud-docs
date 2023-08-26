@@ -25,5 +25,33 @@ While Grafana is not inherently an IAM tool, it can be leveraged within an IAM p
 - **Trend Analysis:** Over time, Grafana can help organizations identify and respond to long-term trends in user behavior and access.
 - **Integration:** Grafana's flexibility allows it to integrate with a multitude of data sources, making it adaptable to various IAM solutions and infrastructures.
 
+## Grafana Resources and Best Practices
+
+1. **Grafana Official Documentation**: 
+   - Start with the official documentation for a comprehensive overview.
+   - [Grafana Documentation](https://grafana.com/docs/grafana/latest/)
+
+2. **Grafana Tutorials**: 
+   - Official tutorials and guides from Grafana.
+   - [Grafana Tutorials](https://grafana.com/tutorials/)
+
+3. **Grafana Labs Blog**: 
+   - Updates, new feature announcements, and insights from the Grafana team.
+   - [Grafana Blog](https://grafana.com/blog/)
+
+4. **Community Forums**: 
+   - Discuss questions and best practices with the active Grafana community.
+   - [Grafana Community](https://community.grafana.com/)
+
+5. **YouTube**: 
+   - Search for Grafana tutorials and walkthroughs on YouTube. Channels such as Grafana Labs and other DevOps-focused creators often cover Grafana topics.
+
+6. **GitHub**: 
+   - Find shared Grafana dashboards and plugins by users. Search for terms like "Grafana dashboard" on GitHub.
+
+7. **Online Courses**: 
+   - Platforms like Udemy, Coursera, and Pluralsight offer courses on Grafana and related tools.
+
+
 ---
 

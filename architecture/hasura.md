@@ -25,5 +25,35 @@ Hasura's built-in fine-grained access control can play a significant role in IAM
 - **Consistent Policy Enforcement:** By centralizing access control in Hasura, organizations can ensure consistent enforcement of security policies across their GraphQL API.
 - **Reduced Development Overhead:** Hasura's built-in access controls reduce the need for custom development, ensuring that security best practices are consistently applied.
 
+## Hasura Resources and Best Practices
+
+1. **Hasura Official Documentation**: 
+   - Comprehensive guide covering everything from getting started to advanced configurations.
+   - [Hasura Documentation](https://hasura.io/docs/latest/graphql/core/index.html)
+
+2. **Hasura Tutorials**: 
+   - Official tutorials and guides to help you make the most out of Hasura.
+   - [Hasura Tutorials](https://hasura.io/learn/)
+
+3. **Hasura Blog**: 
+   - Articles, updates, and insights directly from the Hasura team.
+   - [Hasura Blog](https://hasura.io/blog/)
+
+4. **Hasura Community**: 
+   - Engage with the community, ask questions, and share knowledge.
+   - [Hasura Discord](https://discord.com/invite/hasura)
+   - [Hasura GitHub Discussions](https://github.com/hasura/graphql-engine/discussions)
+
+5. **YouTube**: 
+   - The Hasura team and other community members often post tutorials, webinars, and discussions about Hasura.
+   - Search for "Hasura tutorials" or check out the [HasuraHQ YouTube Channel](https://www.youtube.com/c/HasuraHQ).
+
+6. **GitHub**: 
+   - Hasura's GitHub repository can be a source of information, especially the issues and discussions sections.
+   - [Hasura GitHub Repository](https://github.com/hasura/graphql-engine)
+
+7. **Online Courses**: 
+   - Look for Hasura courses on platforms like Udemy, Coursera, and others to get a structured introduction and deep dives.
+
 ---
 

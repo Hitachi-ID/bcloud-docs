@@ -25,5 +25,36 @@ In the context of IAM, NGINX can play a crucial role as a gateway or proxy that 
 - **Reduced Attack Surface:** By acting as a reverse proxy, NGINX ensures that only necessary application endpoints are exposed to the public.
 - **Session Management:** NGINX can manage and control user sessions, adding an extra layer of security to web applications.
 
+## NGINX Resources and Best Practices
+
+1. **NGINX Official Documentation**: 
+   - The definitive guide covering all features and configurations of NGINX.
+   - [NGINX Documentation](http://nginx.org/en/docs/)
+
+2. **NGINX Beginner’s Guide**: 
+   - A simple introduction to get you started with NGINX.
+   - [NGINX Beginner’s Guide](http://nginx.org/en/docs/beginners_guide.html)
+
+3. **NGINX Blog**: 
+   - Insights, updates, and best practices directly from the NGINX team.
+   - [NGINX Blog](https://www.nginx.com/blog/)
+
+4. **DigitalOcean NGINX Tutorials**: 
+   - DigitalOcean has a plethora of tutorials on NGINX, ranging from basic setup to advanced configurations.
+   - [DigitalOcean NGINX Tutorials](https://www.digitalocean.com/community/tutorial_series/how-to-configure-nginx)
+
+5. **YouTube**: 
+   - There are many tutorials and walkthroughs on NGINX available on YouTube. Just search for "NGINX tutorials" or related terms.
+
+6. **GitHub**: 
+   - Community-driven NGINX configurations and setups can be found on GitHub. These can be great for reference or to adapt for your own needs.
+
+7. **Online Courses**: 
+   - Platforms like Udemy, Coursera, and Pluralsight might have dedicated courses on NGINX. A quick search for "NGINX" on these platforms should yield relevant results.
+
+8. **Stack Overflow**: 
+   - For troubleshooting, the "nginx" tag on Stack Overflow can be a goldmine. Many common (and uncommon) issues and their solutions can be found here.
+
+
 ---
 

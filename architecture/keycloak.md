@@ -26,5 +26,32 @@ Keycloak is fundamentally an IAM tool, helping organizations manage user identit
 - **Token-Based Security:** Keycloak's use of JWT (JSON Web Tokens) for authentication and authorization ensures a secure and stateless approach to user management.
 - **Adaptability:** As a versatile IAM solution, Keycloak can adapt to a wide range of security requirements and scenarios.
 
+## Keycloak Resources and Best Practices
+
+1. **Keycloak Official Documentation**: 
+   - A detailed guide covering Keycloak's features, configurations, and integrations.
+   - [Keycloak Documentation](https://www.keycloak.org/docs/latest/index.html)
+
+2. **Keycloak Blog**: 
+   - Get insights, updates, and best practices directly from the Keycloak team.
+   - [Keycloak Blog](https://www.keycloak.org/blog.html)
+
+3. **Keycloak Community**: 
+   - Engage with other Keycloak users, ask questions, and share knowledge.
+   - [Keycloak User Mailing List](https://www.keycloak.org/community.html)
+
+4. **YouTube**: 
+   - Many developers and organizations post tutorials and walkthroughs about Keycloak on YouTube. Search for "Keycloak tutorials" or check out channels that focus on authentication and security.
+
+5. **GitHub**: 
+   - The Keycloak GitHub repository is a great place to find source code, raise issues, and contribute.
+   - [Keycloak GitHub Repository](https://github.com/keycloak/keycloak)
+
+6. **Online Courses**: 
+   - Several online platforms offer courses that cover Keycloak, its integrations, and best practices. Websites like Udemy, Pluralsight, and Coursera might have courses on Keycloak.
+
+7. **Stack Overflow**: 
+   - A valuable resource for troubleshooting. Many Keycloak-related questions (and answers) can be found here by searching for the "keycloak" tag.
+
 ---
 
